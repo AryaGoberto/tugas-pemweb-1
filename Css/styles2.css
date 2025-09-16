@@ -1,0 +1,142 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d14836;       /* merah background */
+  max-width: 1400px;
+  margin: 20px auto;
+  font-family: Verdana;
+  color: #000;
+}
+
+/* ===== Header ===== */
+.header {
+  background: #d14836;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px 6px 0 0;
+  text-align: left;
+  font-size: 30px;
+}
+
+.header h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 50px;
+}
+
+.header p {
+  font-size: 20px;
+  color: #f0d7d2;
+}
+
+/* ===== Container utama ===== */
+.container {
+  background: #fff;
+  padding: 10px;
+}
+
+/* Text + Button dalam satu row */
+.text-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* ===== Teks konten ===== */
+.text {
+  flex: 1;
+}
+
+.text h1 {
+  color: #d14836;
+  margin-bottom: 15px;
+}
+
+.text h2 {
+  color: #d14836;
+  margin: 20px 0 10px;
+}
+
+.text p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.text a {
+  color: #d14836;
+  margin-right: 8px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ===== Tombol kanan ===== */
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;}
+
+.button button {
+  background: #d14836;
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.button button a{
+  color: #fff;
+  text-decoration: none;
+}
+.button button:hover {
+  background: #b73a2b;
+}
+
+.button button:nth-child(2) {
+  background: #fff;
+  color: #d14836;
+  border: 1px solid #d14836;
+}
+.button button:nth-child(2) a{
+  color: #d14836;
+}
+/* ===== Sidebar ===== */
+.sidebar {
+  background-color: #f7cfc9;
+  width: 100%;
+  padding: 10px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d14836;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  color: #d14836;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #d14836;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}

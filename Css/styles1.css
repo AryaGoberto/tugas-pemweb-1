@@ -1,0 +1,152 @@
+/* Untuk reset keseluruhan margin dan padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Verdana;
+  color: #000;
+  background: #f3f3f3;
+}
+
+.header,
+.container,
+.footer {
+  max-width: 1440px;
+  margin: 20px auto;
+}
+
+.header {
+  background: #04aa6d;
+  color: #fff;
+  border-radius: 6px;
+  padding: 26px;
+}
+
+.header h1 {
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+
+/* ====== Layout utama (menu | konten | sidebar) ====== */
+.container {
+  display: flex;
+  gap: 30px;
+  flex: 5;
+}
+
+/* ====== Menu kiri (button list) ====== */
+.container .button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+}
+
+.container .button button a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .button button {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #d6d6d6;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.15s ease;
+  box-shadow: 0 1px 0 #ddd inset;
+}
+
+/* Aktif = tombol pertama hijau */
+.container .button button:first-child {
+  background: #0aa868;
+  color: #fff;
+  border-color: #0aa868;
+  box-shadow: none;
+}
+.container .button button:first-child a {
+  color: white;
+  font-weight: bold;
+}
+.container .button button:hover {
+  filter: brightness(0.97);
+}
+
+/* ====== Area teks tengah ====== */
+.container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.container .text h1 {
+  line-height: 1.05;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.container .text h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container .text p {
+  line-height: 1.6;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.container .text a {
+  font-size: 20px;
+  color: black;
+  text-underline-offset: 3px;
+  margin-right: 6px;
+}
+
+.sidebar {
+  background: #32a4e7;
+  color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  flex-shrink: 1.8;
+  flex-grow: 1;
+}
+
+.sidebar h3 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.sidebar p {
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+/* ====== Footer abu-abu terang ====== */
+.footer {
+  background: #e9e9e9;
+  padding: 10px;
+  font-size: 70%;
+  color: #111;
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  padding: 18px 22px;
+  text-align: center;
+  box-shadow: 0 1px 0 #ddd inset;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ====== Util kecil ====== */
+a {
+  text-decoration: underline;
+}
