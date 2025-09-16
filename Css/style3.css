@@ -49,6 +49,11 @@ html, body {
   cursor: pointer;
   transition: filter .15s ease;
 }
+.button button a {
+  color: white;             /* link di tombol */
+  text-decoration: none;
+  font-weight: semi-bold;
+}
 .button button:hover { filter: brightness(.95); }
 
 /* tombol ke-3 aktif (hijau) */
